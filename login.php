@@ -40,13 +40,13 @@
                   </div>
                   <div class="form-group d-flex align-items-center justify-content-between">
                     
-                     <a href="#" class="forgot-pass">Forgot password</a> 
+                     <!-- <a href="#" class="forgot-pass">Forgot password</a>  -->
                   </div>
                   <div class="text-center">
                     <button type="submit" name="save" class="btn btn-primary btn-block enter-btn">Login</button>
                   </div>
                 
-                  <p class="sign-up">Don't have an Account?<a href="#"> Sign Up</a></p> 
+                  <!-- <p class="sign-up">Don't have an Account?<a href="#"> Sign Up</a></p>  -->
                 </form>
               </div>
             </div>
@@ -94,10 +94,12 @@ if(isset($_POST['save']))
      $_SESSION['admin']=$row[0];
     echo'
     <script>
-   window.location.href="admin/index.php";
-    </script>
-    ';
-    }
+  .href="admin/index.php";
+  <script>
+  window.location.href="admin/index.php";
+   </script>
+   ';
+   }
 
     else if($num2=mysqli_num_rows($sh)>0)
      {
